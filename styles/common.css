@@ -1,70 +1,59 @@
-html, body{
-    height: 100%;
-    width: 100%;
+*{
+    font-family: 'Ubuntu';
+}
+body{
+    height: 50vh;
+    margin: 0;
     background-color: #e0e0e0;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Ubuntu', sans-serif; 
 }
-
-.header{
-    top: 0%;
+.container{
+    height: 100%; width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.footer{
-    bottom: 0%;
-}
-.header, .footer{
-	top:0;
+.flex-box{
+    width: 100%;
     background-color: rosybrown;
-    left: 0%;
-    width: 100%;
-    position: sticky;
-
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
 }
-.footer {
-    bottom: 0;
-    background-color:rosybrown;
-    left: 0%;
-    width: 100%;
-    position: sticky;
-}
-.section{
-    left: 0%;
-    width: 100%;
-
-
-
-
-
-}
-.website-logo{
-    height: 60px;
-    width: 60px;
-}
-.nav-links{
-    float: right;
-    margin-top: 1.5%;
-    padding-right: 15px;
-}
-.nav-links a, .contact-container a{
+a{
     text-decoration: none;
-    color: black;  
+    font-family: 'Ubuntu';
+    color: black;
 }
-
-.contact-container a{
-    float: left;
-    margin-top: 1.5%;
-    padding-left: 15px;
+header{ 
+    top: 0px;
+    left: 0px;
 }
-.social-media-icons {
-    height: 20px;
-    width: 22px;
+.login-btn{
+    margin-right: 2%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0% 5%;
+}
+footer{
+    bottom: 0px;
+    right: 0px;
+}
+footer div{
+    margin: 1% 2%;
+}
+.social-media{
+    height: 20px; width: 22px;
+}
+#logo-image{
+    height: 60px; width: 60px;
+    vertical-align: middle;
+    margin-left: 2%;
 }
 .copyright{
-    text-align: center;
-
+    font-size: 10px;
+    font-weight: bold;
 }
-@font-face {
-    font-family: 'Ubuntu', sans-serif;
-    src: url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
-} 
